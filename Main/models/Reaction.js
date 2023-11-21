@@ -3,8 +3,8 @@ const { Schema, model } = require('mongoose');
 const reactionSchema = new Schema(
  {
     reactionId: {
-      type: mongoose.Schema.Types.ObjectId,
-      default: mongoose.Types.ObjectId,
+      type: Schema.Types.ObjectId,
+      default: Schema.Types.ObjectId,
     },
     reactionBody: {
       type: String,
@@ -21,6 +21,5 @@ const reactionSchema = new Schema(
     },
   });
 
-const Reaction = model ('reaction ', reactionSchema);
 
-module.exports = Reaction;
+module.exports = reactionSchema;
