@@ -1,26 +1,35 @@
 const { Schema, model } = require('mongoose');
 
 const userSchema = new Schema(
-  {
-    username: {
-      type: String,
-      required: true,
-      unique: true,
-      trimmed: true
-    },
-    email: {
-      type: String,
-      required: true,
-      unique: true,
-      match: [],
-    },
-    thoughts: [thoughtSchema],
+{
+  username: {
+    type: String,
+    unique: true,
+    required: true,
+    trim: true,
   },
-  {
-    toJSON: {
-      getters: true,
+
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+    match: [/.+@.+\..+/, 'Please enter a valid email address'],
+  },
+
+  thoughts: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Thought', 
     },
-  }
+  ],
+
+  friends: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User', 
+    },
+  ],
+}
 );
 
 userSchema
