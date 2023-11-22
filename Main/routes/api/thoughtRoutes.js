@@ -9,6 +9,6 @@ const {
 router.route('/').get(getThought).post(createThought);
 
 // /api/users/:thoughtId
-router.route('/:userId').delete(deleteThought);
+router.route('/:thoughtId').delete(deleteThought);
 
 module.exports = router;

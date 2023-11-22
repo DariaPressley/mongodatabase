@@ -31,7 +31,7 @@ https://github.com/DariaPressley/mongodatabase
 
 ## Video Link
 
-
+https://drive.google.com/file/d/1OwUNyvjazyxqZcAoFToy8M1S3pQjM7dA/view
 
 ## Credits
 
@@ -43,4 +43,4 @@ Please refer to the LICENSE in the repo.
 
 ## Video
 
-[<img src="./images/mongoimage.png" width="50%">](link here "Demo Video")
+[<img src="./images/mongoimage.png" width="50%">](https://drive.google.com/file/d/1OwUNyvjazyxqZcAoFToy8M1S3pQjM7dA/view "Demo Video")
